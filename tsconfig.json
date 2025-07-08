@@ -11,11 +11,12 @@
     ],
     "module": "nodenext",
     "target": "es2024",
-    "noEmit": true, // Use TS only for type checking, not bundling
-    "allowImportingTsExtensions": true, // Allow import TS files
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node16"
+    "moduleResolution": "node16",
+    "strictNullChecks": true
   }
 }
