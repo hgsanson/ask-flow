@@ -17,6 +17,10 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
+app.get('/health', () => {
+  return 'OK'
+})
+
 app.register(getRoomsRoute)
 
 app.listen({ port: env.PORT })
